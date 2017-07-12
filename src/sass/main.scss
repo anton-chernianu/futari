@@ -1,8 +1,10 @@
-$blue_color: #059bce;
+$text_black: #343434;
+$red_color: #f95860;
+$opensans_reg: "OpenSansRegular";
+$opensans_bold: "OpenSansBold";
+$opensans_light: "OpenSansLight";
 
 @import "partials/reset";
 @import "partials/fonts";
+@import "partials/header"
 
-.hello{
-	font-size: 2px;
-}
