@@ -1,0 +1,24 @@
+{
+  "name": "GULP-project",
+  "version": "1.0.0",
+  "description": "Anton Chernianu",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JasonSTHM",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11",
+    "browser-sync": "^2.18.7",
+    "imagemin-pngquant": "^5.0.0",
+    "gulp-tinypng": "^1.0.2",
+    "gulp-pug": "3.3.0"
+  },
+  "dependencies": {
+    "del": "^2.2.2"
+  }
+}
