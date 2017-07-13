@@ -1,9 +1,12 @@
 header.header
 	.header__container
 		.logo
+			a(href="/")
+				svg.logo-group(viewBox="0 0 110.4 71.3")
+					use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#logo-group")
 		nav.menu
 			ul.menu__list
-				li.menu__item
+				li.menu__item.menu__item--active
 					a(href="#") Компания
 				li.menu__item
 					a(href="#") Магазин
@@ -13,7 +16,14 @@ header.header
 					a(href="#") Контакты
 		.language
 			ul.language__list
-				li.language__item
+				li.language__item.language__item--active
 					a(href="#") Rus
+				span.language__line |
 				li.language__item
 					a(href="#") Eng
+//- h1 Hello World
+//- h2 Hello World
+//- h3 Hello World
+//- h4 Hello World
+//- h5 Hello World
+//- h6 Hello World

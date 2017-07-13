@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Project Futari</title>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link href="css/main.css" rel="stylesheet">
-  </head>
-  <body class="home"><!-- svg.logo-group(viewBox="0 0 110.4 71.3")
+<!-- svg.logo-group(viewBox="0 0 110.4 71.3")
 	use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#logo-group") -->
 
 <div class="svg-all">
@@ -80,29 +69,3 @@
 	</g>
   </svg>
 </div>
-
-    <header class="header">
-      <div class="header__container">
-        <div class="logo"><a href="/">
-            <svg class="logo-group" viewBox="0 0 110.4 71.3">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-group"></use>
-            </svg></a></div>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item menu__item--active"><a href="#">Компания</a></li>
-            <li class="menu__item"><a href="#">Магазин</a></li>
-            <li class="menu__item"><a href="#">Доставка</a></li>
-            <li class="menu__item"><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="language">
-          <ul class="language__list">
-            <li class="language__item language__item--active"><a href="#">Rus</a></li><span class="language__line">|</span>
-            <li class="language__item"><a href="#">Eng</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <script src="js/main.js"></script>
-  </body>
-</html>

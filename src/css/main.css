@@ -52,6 +52,60 @@ table {
   border-spacing: 0;
 }
 
+html {
+  font-size: 16px;
+  font-family: "OpenSansRegular";
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+h3 {
+  font-size: 3.4rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2.6rem;
+}
+
+h6 {
+  font-size: 2.2rem;
+}
+
+.svg-all {
+  display: none;
+}
+
+.logo-group {
+  width: 130px;
+  height: 80px;
+}
+
+#logo-group path {
+  fill: #575757;
+}
+
 /* font-family: "OpenSansRegular"; */
 @font-face {
   font-family: "OpenSansRegular";
@@ -140,4 +194,119 @@ table {
   src: url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.woff") format("woff"), url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+}
+
+.header {
+  background-color: #fafafa;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.header__container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  width: 20%;
+}
+
+.menu {
+  font-size: 1rem;
+  font-family: "OpenSansLight";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  margin-top: 25px;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__item {
+  padding: 5px 20px;
+}
+
+.menu__item a {
+  text-decoration: none;
+  color: #343434;
+  padding-bottom: 2px;
+}
+
+.menu__item a:hover {
+  color: #f95860;
+}
+
+.menu__item--active a {
+  color: #f95860;
+  border-bottom: 2px solid #f95860;
+}
+
+.language {
+  width: 20%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+
+.language__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  text-transform: uppercase;
+}
+
+.language__item {
+  padding: 0 2px;
+}
+
+.language__item a {
+  text-decoration: none;
+  color: #343434;
+}
+
+.language__item a:hover {
+  color: #f95860;
+}
+
+.language__item--active a {
+  color: #f95860;
+  font-family: "OpenSansBold";
 }
