@@ -71,5 +71,11 @@ h6 {
 	}
 }
 
+.svg-all:hover{
+	#logo-group path {
+		fill: red !important;
+	}
+}
+
 @import "partials/fonts";
 @import "partials/header";
