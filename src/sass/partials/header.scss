@@ -22,7 +22,8 @@
 	font-family: $opensans_light;
 	display: flex;
 	width: 60%;
-	margin-top: 25px;
+	// margin-top: 25px;
+
 
 	&__list {
 		display: flex;
@@ -32,6 +33,19 @@
 
 	&__item {
 		padding: 5px 20px;
+    
+    &:after{
+      content: '';
+      margin-top: 5px;
+      display: block;
+      height: 2px;
+      width: 0px;
+      transition: width .5s ease, background-color .5s ease;
+    }
+    &:hover:after {
+      width: 100%;
+      background: $red_color;
+    }
 
 		a {
 			text-decoration: none;
@@ -53,7 +67,7 @@
 .language {
 	width: 20%;
 	display: flex;
-	margin-top: 25px;
+	// margin-top: 25px;
 
 	&__list {
 		display: flex;
