@@ -1,0 +1,50 @@
+.main-content__container {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.title {
+	font-family: $opensans_reg;
+	color: #343434;
+	text-transform: uppercase;
+	font-size: 3.8rem;
+	
+	&--center {
+		text-align: center;
+	}
+}
+
+.car-grid {
+	margin-top: 70px;
+
+	&__block {
+		display: flex;
+		flex-flow: row wrap;
+		margin-top: 25px;
+	}
+}
+
+.car {
+
+	&__image {
+		width: 50%;
+		padding: 15px;
+		box-sizing: border-box;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__info {
+		width: 50%;
+		padding: 15px;
+		box-sizing: border-box;
+	}
+
+	&__title {
+		
+	}
+}

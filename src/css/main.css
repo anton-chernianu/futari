@@ -357,17 +357,17 @@ h6 {
 
 .mobile-menu li:nth-child(2) {
   -webkit-transition-delay: .1s;
-  transition-delay: .1s;
+          transition-delay: .1s;
 }
 
 .mobile-menu li:nth-child(3) {
   -webkit-transition-delay: .15s;
-  transition-delay: .15s;
+          transition-delay: .15s;
 }
 
 .mobile-menu li:nth-child(4) {
   -webkit-transition-delay: .2s;
-  transition-delay: .2s;
+          transition-delay: .2s;
 }
 
 .mobile-menu.mobile-menu--open {
@@ -390,8 +390,9 @@ h6 {
 .humburger {
   position: fixed;
   z-index: 10;
-  top: 10px;
+  top: 20px;
   right: 5px;
+  display: none;
 }
 
 .wrapper:nth-of-type(3n + 1) {
@@ -407,15 +408,15 @@ h6 {
 }
 
 .menu-button-wrapper {
-  width: 80px;
+  width: 50px;
   height: 50px;
   cursor: pointer;
 }
 
 .menu-button-wrapper span {
   background-color: #333;
-  width: 80px;
-  height: 10px;
+  width: 50px;
+  height: 5px;
   margin: 5px 0;
   -webkit-border-radius: 3px;
           border-radius: 3px;
@@ -438,11 +439,11 @@ h6 {
 
 #menu-button-wrapper span:nth-of-type(2),
 #menu-button-wrapper span:nth-of-type(3) {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #menu-button-wrapper span:nth-of-type(4) {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 #menu-button-wrapper.open span:nth-of-type(1) {
@@ -471,6 +472,55 @@ h6 {
   margin-left: 40px;
 }
 
-.test {
-  height: 2000px;
+.main-content__container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.title {
+  font-family: "OpenSansRegular";
+  color: #343434;
+  text-transform: uppercase;
+  font-size: 3.8rem;
+}
+
+.title--center {
+  text-align: center;
+}
+
+.car-grid {
+  margin-top: 70px;
+}
+
+.car-grid__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-top: 25px;
+}
+
+.car__image {
+  width: 50%;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.car__image img {
+  width: 100%;
+}
+
+.car__info {
+  width: 50%;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }

@@ -4,11 +4,15 @@
 	}
 
 	.humburger {
-		// display: flex;
+		display: block;
 	}
 
 	.language {
 		// width: 80%;
 		display: none;		
+	}
+
+	.title {
+		font-size: 3rem;
 	}
 }
