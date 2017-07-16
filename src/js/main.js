@@ -19,6 +19,35 @@ $( document ).ready(function() {
 	// Mobibe Humburger Menu
 	$(".menu-button-wrapper").click(function(){
 		$(this).toggleClass("open");
-		$('.mobile-menu').toggleClass('mobile-menu--open');
+		$(".mobile-menu").toggleClass("mobile-menu--open");
 	})
+
+	$('.car__image').hover(function(){
+		$(this).find(":nth-child(2)").fadeToggle();
+	});
+
+	if ($(window).width() < 600) {
+   		$('.car__image').find(":nth-child(2)").remove();
+	}
+
+     // $("#front-juke").hover(function(){           
+     //     $(this).fadeOut(1000,function(){
+     //       $(this).attr("src","images/nissan-back.jpg");
+     //       $(this).fadeIn(1000);
+     //     });
+     //   },  function(){                 
+     //       $(this).fadeOut(1000, function(){
+     //         $(this).attr("src","images/nissan-front.jpg");
+     //         $(this).fadeIn(1000);
+     //       });                  
+     //   });
+	
+	// $( "#front-juke" ).hover(
+ //  function() {
+ //    $(this).attr("src","images/nissan-front2.jpg");
+ //    // $(this).fadeTo();
+ //  }, function() {
+ //    $(this).attr("src","images/nissan-front.jpg");
+ //  }
+	// );
 });

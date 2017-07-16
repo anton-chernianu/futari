@@ -17,6 +17,15 @@
   .car__info {
     width: 100%;
   }
+  .car__image {
+    height: auto;
+  }
+  .car__image img {
+    position: static;
+  }
+  .car__image img:nth-child(2) {
+    display: none;
+  }
   .car__image--order {
     -webkit-box-ordinal-group: 0;
     -webkit-order: -1;

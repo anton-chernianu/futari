@@ -26,9 +26,20 @@
 			width: 100%;
 		}
 	}
+	
+	.car__image {
+		height: auto;
+
+		img {
+			position: static;
+		}
+
+		img:nth-child(2) {
+			display: none;
+		}
+	}
 
 	.car__image--order {
 		order: -1;
 	}
-
 }

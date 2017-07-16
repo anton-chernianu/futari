@@ -718,3 +718,19 @@ ul li {
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
 }
+
+.car__image {
+  position: relative;
+  height: 500px;
+}
+
+.car__image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.car__image img:nth-child(2) {
+  display: none;
+}
