@@ -55,6 +55,17 @@ h6 {
 	font-size: 2.2rem;
 }
 
+ul {
+	margin-top: 15px;
+	font-family: $opensans_light;
+	padding-left: 15px;
+
+	li {
+		// list-style: square outside;
+		margin-top: 4px;
+	}
+}
+
 // SVG Settings
 .svg-all {
 	display: none;

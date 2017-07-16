@@ -15,4 +15,20 @@
 	.title {
 		font-size: 3rem;
 	}
+
+	.car {
+
+		&__image {
+			width: 100%;
+		}
+
+		&__info {
+			width: 100%;
+		}
+	}
+
+	.car__image--order {
+		order: -1;
+	}
+
 }

@@ -93,6 +93,16 @@ h6 {
   font-size: 2.2rem;
 }
 
+ul {
+  margin-top: 15px;
+  font-family: "OpenSansLight";
+  padding-left: 15px;
+}
+
+ul li {
+  margin-top: 4px;
+}
+
 .svg-all {
   display: none;
 }
@@ -491,6 +501,7 @@ h6 {
 }
 
 .car-grid {
+  color: #343434;
   margin-top: 70px;
 }
 
@@ -523,4 +534,28 @@ h6 {
   padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.car__title {
+  font-family: "OpenSansLight";
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+.car__title::after {
+  content: '';
+  display: block;
+  max-width: 165px;
+  width: 100%;
+  background-color: #f95860;
+  height: 3px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.car__text {
+  font-family: "OpenSansLight";
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 22px;
 }

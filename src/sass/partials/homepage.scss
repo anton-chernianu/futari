@@ -7,7 +7,7 @@
 
 .title {
 	font-family: $opensans_reg;
-	color: #343434;
+	color: $text_black;
 	text-transform: uppercase;
 	font-size: 3.8rem;
 	
@@ -17,6 +17,7 @@
 }
 
 .car-grid {
+	color: $text_black;
 	margin-top: 70px;
 
 	&__block {
@@ -45,6 +46,26 @@
 	}
 
 	&__title {
-		
+		font-family: $opensans_light;
+		text-transform: uppercase;
+		font-size: 2.4rem;
+
+		&::after {
+			content: '';
+			display: block;
+			max-width: 165px;
+			width: 100%;
+			background-color: $red_color;
+			height: 3px;
+			margin-top: 5px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__text {
+		font-family: $opensans_light;
+		font-size: 1.2rem;
+		text-align: justify;
+		line-height: 22px;
 	}
 }

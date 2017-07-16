@@ -11,4 +11,16 @@
   .title {
     font-size: 3rem;
   }
+  .car__image {
+    width: 100%;
+  }
+  .car__info {
+    width: 100%;
+  }
+  .car__image--order {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
