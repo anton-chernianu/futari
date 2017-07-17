@@ -30,27 +30,6 @@ $( document ).ready(function() {
    		$('.car__image').find(":nth-child(2)").remove();
 	}
 
-  $('#light-btn').on('click', function() {
-    var dataName = $(this).data('name');
-    $('.market-block').hide();
-    
-    // if($(this).hasClass('active')) {
-    //   $(this).removeClass('active');
-    //   return;
-    // }
-    
-    // $('#light-btn').removeClass('active');
-    // $(this).addClass('active');
-    
-    $('.' + dataName).show();
-  });
-
-
-  $('.plus--close').on('click', function() {
-  	$('.market-block').hide();
-  });
-
-
      // $("#front-juke").hover(function(){           
      //     $(this).fadeOut(1000,function(){
      //       $(this).attr("src","images/nissan-back.jpg");

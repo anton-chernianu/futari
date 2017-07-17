@@ -1,9 +1,3 @@
-@media only screen and (max-width: 800px) {
-  #light-btn {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .menu {
     display: none;
