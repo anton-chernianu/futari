@@ -91,36 +91,3 @@ ul {
 @import "partials/fonts";
 @import "partials/header";
 @import "partials/homepage";
-
-.car__image {
-	position: relative;
-	height: 500px;
-
-	img {
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 100%;
-		// height: 451px;
-
-		
-	}
-	img:nth-child(2) {
-		display: none;
-	}
-}
-
-// #front-juke {
-// 	position: absolute;
-// 	top: 0;
-// 	right: 0;
-// 	width: 100%;
-// }
-
-// #front-juke2 {
-// 	display: none;
-// 	position: absolute;
-// 	top: 0;
-// 	right: 0;
-// 	width: 100%;
-// }

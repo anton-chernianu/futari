@@ -197,3 +197,60 @@
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
 }
+
+.car__image {
+  position: relative;
+  height: 500px;
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    // height: 451px;
+
+    
+  }
+  img:nth-child(2) {
+    display: none;
+  }
+}
+
+.footer {
+  background-color: $header_background;
+  border-top: 2px solid $header_bottom_line;
+  padding: 35px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.site-info {
+
+    &__title {
+      font-family: $opensans_light;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: $text_black;
+    }
+
+    &__address {
+      font-family: $opensans_light;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      margin-top: 4px;
+      color: $text_black;
+    }
+
+    &__phone {
+      margin-top: 10px;
+      font-size: 1rem;
+      display: block;
+      text-decoration: none;
+      color: $text_black;
+      transition-duration: .5s;
+
+      &:hover {
+        color: $red_color;
+      }
+    }
+}

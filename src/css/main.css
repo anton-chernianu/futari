@@ -734,3 +734,40 @@ ul li {
 .car__image img:nth-child(2) {
   display: none;
 }
+
+.footer {
+  background-color: #fafafa;
+  border-top: 2px solid #f5f5f5;
+  padding: 35px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.site-info__title {
+  font-family: "OpenSansLight";
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #343434;
+}
+
+.site-info__address {
+  font-family: "OpenSansLight";
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-top: 4px;
+  color: #343434;
+}
+
+.site-info__phone {
+  margin-top: 10px;
+  font-size: 1rem;
+  display: block;
+  text-decoration: none;
+  color: #343434;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.site-info__phone:hover {
+  color: #f95860;
+}
