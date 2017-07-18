@@ -14,6 +14,27 @@
 // 		icon: "../images/map.png"
 //   });
 // }
+window.onscroll=function(){
+   console.log( 
+     'top: '  + (window.pageYOffset || document.documentElement.scrollTop) + ' ' +
+     'left: ' + (window.pageXOffset || document.documentElement.scrollLeft)
+   );
+}
+if ($(window).width() > 600) {
+  $(window).scroll(function() {
+      if ($(this).scrollTop() > 100) { // this refers to window
+          // alert("You've scrolled 100 pixels.");
+          $('.car__image').find(":nth-child(1)").hide();
+          $('.car__image').find(":nth-child(2)").show();
+      }
+
+        if ($(this).scrollTop() < 100) { // this refers to window
+          // alert("You've scrolled 100 pixels.");
+          $('.car__image').find(":nth-child(1)").show();
+          $('.car__image').find(":nth-child(2)").hide();
+      }
+  });
+}
 
 $( document ).ready(function() {
 	// Mobibe Humburger Menu
@@ -22,9 +43,9 @@ $( document ).ready(function() {
 		$(".mobile-menu").toggleClass("mobile-menu--open");
 	})
 
-	$('.car__image').hover(function(){
-		$(this).find(":nth-child(2)").fadeToggle();
-	});
+	// $('.car__image').hover(function(){
+	// 	$(this).find(":nth-child(2)").fadeToggle();
+	// });
 
 	if ($(window).width() < 600) {
    		$('.car__image').find(":nth-child(2)").remove();

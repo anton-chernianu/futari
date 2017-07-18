@@ -100,7 +100,9 @@ ul {
 }
 
 ul li {
-  margin-top: 4px;
+  margin-top: 5px;
+  line-height: 24px;
+  font-size: 1.2rem;
 }
 
 .svg-all {
@@ -108,7 +110,7 @@ ul li {
 }
 
 .logo-group {
-  width: 130px;
+  width: 100px;
   height: 80px;
 }
 
@@ -3630,10 +3632,11 @@ ul li {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
+  text-align: center;
 }
 
 .car__image img {
-  width: 100%;
+  max-width: 90%;
 }
 
 .car__info {
@@ -3664,7 +3667,7 @@ ul li {
   font-family: "OpenSansLight";
   font-size: 1.2rem;
   text-align: justify;
-  line-height: 22px;
+  line-height: 25px;
 }
 
 .plus {
@@ -3697,8 +3700,6 @@ ul li {
 
 .plus--close {
   position: absolute;
-  left: 10px;
-  top: 10px;
   z-index: 12;
   width: 50px;
   height: 50px;
@@ -3711,6 +3712,9 @@ ul li {
           transition-duration: .3s;
   outline: 0;
   cursor: pointer;
+  left: 50%;
+  margin-left: -50px;
+  top: 45%;
 }
 
 .plus--close:after {
@@ -3724,9 +3728,7 @@ ul li {
 }
 
 .plus--close:hover {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  border: 2px solid #7d7979;
 }
 
 #light-btn {
@@ -3791,16 +3793,16 @@ ul li {
   display: block;
   overflow: hidden;
   width: 100%;
-  height: 60px;
+  height: 50px;
   text-align: center;
-  max-width: 200px;
+  max-width: 150px;
   margin: 0.5rem;
   text-transform: uppercase;
   -webkit-border-radius: 25px;
           border-radius: 25px;
   border: 1px solid currentColor;
   text-decoration: none;
-  line-height: 60px;
+  line-height: 50px;
   color: black;
 }
 
