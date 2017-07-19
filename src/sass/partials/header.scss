@@ -21,6 +21,8 @@
 	font-size: 1rem;
 	font-family: $opensans_light;
 	display: flex;
+  align-items: center;
+  justify-content: center;
 	width: 60%;
 	// margin-top: 25px;
 
@@ -67,6 +69,8 @@
 .language {
 	width: 20%;
 	display: flex;
+  justify-content:center;
+  align-items: center;
 	// margin-top: 25px;
 
 	&__list {
@@ -74,6 +78,7 @@
 		flex-flow: row wrap;
 		// justify-content: space-between;
 		text-transform: uppercase;
+        height: 25px;
 
 	}
 

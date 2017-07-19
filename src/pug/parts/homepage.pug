@@ -6,7 +6,9 @@ section.main-content
 				.car__image
 					img(src="images/nissan-front.jpg")
 					img(src="images/nissan-front2.jpg")
-					button.plus#light-btn(data-name="light")
+					//- button.plus#light-btn(data-name="light")
+					.plus#light-btn(data-name="light")
+						span +
 				.car__info
 					p.car__title Lorem ipsum dolor
 					p.car__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere vero, placeat odio porro iusto hic eum architecto sit ea dolorum deleniti, error voluptates corporis ut nemo qui. Tempore quaerat nam numquam, voluptatem voluptates odio ut porro laborum deleniti, voluptate autem aliquid excepturi optio harum laboriosam doloremque amet distinctio! Obcaecati, iusto?<br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nesciunt accusantium est, recusandae a sapiente quis ea fugit, repellat maxime dolor. Dolorum dicta quisquam, voluptatem.
@@ -22,15 +24,16 @@ section.main-content
 						.marker-info__image.animated.fadeInLeft(style="background-image:url('images/juke.jpg');")
 						.marker-info__text.animated.fadeInRight
 							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum pariatur alias doloremque, voluptatibus adipisci ex amet minima aliquid quo, velit, praesentium dignissimos, ab perferendis cupiditate quos quis. Perspiciatis, porro, dolor.
-						button.plus--close
+						.plus--close
+							span +
 			.car-grid__block
 				.car__info
 					p.car__title Lorem ipsum dolor
 					p.car__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere vero, placeat odio porro iusto hic eum architecto sit ea dolorum deleniti, error voluptates corporis ut nemo qui. Tempore quaerat nam numquam, voluptatem voluptates odio ut porro laborum deleniti, voluptate autem aliquid excepturi optio harum laboriosam doloremque amet distinctio! <br>
-					ul
-						li - Lorem ipsum dolor sit amet.
-						li - Lorem ipsum dolor sit amet.
-						li - Lorem ipsum dolor sit amet.
+					ul.car-specific
+						li.car-specific__item - Lorem ipsum dolor sit amet.
+						li.car-specific__item - Lorem ipsum dolor sit amet.
+						li.car-specific__item - Lorem ipsum dolor sit amet.
 					.button-line
 						a.btn.btn--futari(href="#") Button
 						a.btn.btn--futari(href="#") Button

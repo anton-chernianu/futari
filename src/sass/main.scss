@@ -55,12 +55,12 @@ h6 {
 	font-size: 2.2rem;
 }
 
-ul {
+.car-specific {
 	margin-top: 15px;
 	font-family: $opensans_light;
 	padding-left: 15px;
 
-	li {
+	&__item {
 		// list-style: square outside;
 		margin-top: 5px;
 		line-height: 24px;
