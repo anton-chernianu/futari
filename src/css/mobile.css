@@ -23,8 +23,14 @@
   .car__info {
     width: 100%;
   }
+  .car-grid {
+    margin: 0;
+  }
+  .car-grid__block {
+    margin: 0;
+  }
   .car__image {
-    height: auto;
+    height: 350px;
   }
   .car__image img {
     position: static;

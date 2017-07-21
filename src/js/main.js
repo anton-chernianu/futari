@@ -14,12 +14,16 @@
 // 		icon: "../images/map.png"
 //   });
 // }
+
+
 window.onscroll=function(){
    console.log( 
      'top: '  + (window.pageYOffset || document.documentElement.scrollTop) + ' ' +
      'left: ' + (window.pageXOffset || document.documentElement.scrollLeft)
    );
 }
+
+// SCROLL ACTION
 // if ($(window).width() > 600) {
 //   $(window).scroll(function() {
 //       if ($(this).scrollTop() > 100) { // this refers to window
@@ -37,19 +41,21 @@ window.onscroll=function(){
 // }
 
 $( document ).ready(function() {
-	// Mobibe Humburger Menu
+	// Mobile Humburger Menu
 	$(".menu-button-wrapper").click(function(){
 		$(this).toggleClass("open");
 		$(".mobile-menu").toggleClass("mobile-menu--open");
 	})
 
-	$('.car__image').hover(function(){
-		$(this).find(":nth-child(2)").fadeToggle();
-	});
+  // JS HOVER
+	// $('.car__image').hover(function(){
+	// 	$(this).find(":nth-child(2)").fadeToggle();
+	// });
 
-	if ($(window).width() < 600) {
-   		$('.car__image').find(":nth-child(2)").remove();
-	}
+	// if ($(window).width() < 600) {
+ //   		$('.car__image').find(":nth-child(2)").remove();
+	// }
+  // FINISH JS HOVER
 
   $('#light-btn').on('click', function() {
     var dataName = $(this).data('name');
