@@ -77,6 +77,15 @@ $( document ).ready(function() {
   	$('.market-block').hide();
   });
 
+  $('#btn--cream').on('click', function() {
+    $('.car__front-toxic').addClass('car--hidden');
+    $('.car__front-cream').addClass('car--visible');
+  });
+
+   $('#btn--toxic').on('click', function() {
+        $('.car__front-toxic').removeClass('car--hidden');
+    $('.car__front-cream').removeClass('car--visible');
+  });
 
      // $("#front-juke").hover(function(){           
      //     $(this).fadeOut(1000,function(){

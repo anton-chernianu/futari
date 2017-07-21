@@ -3696,11 +3696,40 @@ h6 {
   height: 100%;
   width: 90%;
   margin: 0 auto;
+}
+
+.car__back-toxic:hover {
+  background-image: url("../images/nissan-back4.jpg");
+}
+
+.car__front-cream {
+  background-image: url("../images/nissan-cream-front3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.car__front-cream:hover {
+  background-image: url("../images/nissan-cream-front2.jpg");
+}
+
+.car__back-cream {
+  background-image: url("../images/nissan-back3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
   -webkit-transition-duration: .8s;
           transition-duration: .8s;
 }
 
-.car__back-toxic:hover {
+.car__back-cream:hover {
   background-image: url("../images/nissan-back4.jpg");
 }
 
@@ -3733,6 +3762,16 @@ h6 {
   font-size: 1.2rem;
   text-align: justify;
   line-height: 25px;
+}
+
+.car--hidden {
+  opacity: 0;
+  display: none;
+}
+
+.car--visible {
+  opacity: 1;
+  display: block;
 }
 
 .plus {

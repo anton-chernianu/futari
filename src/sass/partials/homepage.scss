@@ -84,7 +84,39 @@
     height: 100%;
     width: 90%;
     margin: 0 auto;
+    // transition-duration: .8s;
+
+    &:hover {
+      background-image: url('../images/nissan-back4.jpg');
+    }
+  }
+
+    &__front-cream {
+    background-image: url('../images/nissan-cream-front3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    // transition-duration: .8s;
+    opacity: 0;
+
+    &:hover {
+      background-image: url('../images/nissan-cream-front2.jpg');
+    }
+  }
+
+  &__back-cream {
+    background-image: url('../images/nissan-back3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
     transition-duration: .8s;
+
 
     &:hover {
       background-image: url('../images/nissan-back4.jpg');
@@ -120,6 +152,16 @@
 		text-align: justify;
 		line-height: 25px;
 	}
+}
+
+.car--hidden {
+  opacity: 0;
+  display: none;
+}
+
+.car--visible {
+  opacity: 1;
+  display: block;
 }
 
 .plus{
