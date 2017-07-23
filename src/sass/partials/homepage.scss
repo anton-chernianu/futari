@@ -121,7 +121,9 @@
     height: 100%;
     width: 90%;
     margin: 0 auto;
-    // transition-duration: .8s;
+    transition: 0.8s;
+    transition-timing-function: linear;
+    // transition-delay: 1.5s;
 
     &:hover {
       background-image: url('../images/nissan-front2.jpg');
@@ -136,7 +138,9 @@
     height: 100%;
     width: 90%;
     margin: 0 auto;
-    // transition-duration: .8s;
+    transition: 0.8s;
+    transition-timing-function: linear;
+    
 
     &:hover {
       background-image: url('../images/nissan-back4.jpg');
@@ -151,8 +155,10 @@
     height: 100%;
     width: 90%;
     margin: 0 auto;
-    // transition-duration: .8s;
-    opacity: 0;
+    transition: 0.8s;
+    transition-timing-function: linear;
+    // opacity: 0;
+    display: none;
 
     &:hover {
       background-image: url('../images/nissan-cream-front2.jpg');
@@ -167,7 +173,8 @@
     height: 100%;
     width: 90%;
     margin: 0 auto;
-    transition-duration: .8s;
+    transition: 0.8s;
+    transition-timing-function: linear;
 
 
     &:hover {
