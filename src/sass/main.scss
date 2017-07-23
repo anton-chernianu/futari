@@ -22,7 +22,9 @@ html {
 body.home::after {
   content:
       url('../images/nissan-front2.jpg')
-      url('../images/nissan-cream-front2.jpg');
+      url('../images/nissan-cream-front2.jpg')
+      url('../images/nissan-back4.jpg')
+      ;
   display: none;
 }
 
