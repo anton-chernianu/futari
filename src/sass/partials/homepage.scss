@@ -17,6 +17,7 @@
 }
 
 .color {
+  margin-top: 10px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -140,7 +141,7 @@
     margin: 0 auto;
     transition: 0.8s;
     transition-timing-function: linear;
-    
+
 
     &:hover {
       background-image: url('../images/nissan-back4.jpg');
@@ -191,7 +192,7 @@
 	&__title {
 		font-family: $opensans_light;
 		text-transform: uppercase;
-		font-size: 2rem;
+		font-size: 1.7rem;
 
 		&::after {
 			content: '';
