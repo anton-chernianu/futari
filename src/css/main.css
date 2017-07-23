@@ -57,6 +57,11 @@ html {
   font-family: "OpenSansRegular";
 }
 
+body.home::after {
+  content: url("../images/nissan-front2.jpg") url("../images/nissan-cream-front2.jpg");
+  display: none;
+}
+
 @media only screen and (max-width: 900px) {
   html {
     font-size: 14px;
@@ -3624,6 +3629,89 @@ h6 {
   text-align: center;
 }
 
+.color {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.color__title {
+  width: 100%;
+  text-align: center;
+}
+
+.color__toxic {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1aab1a;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin: 2px;
+  cursor: pointer;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+.color__toxic:hover {
+  background-color: #000;
+}
+
+.color__cream {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #c1b8a4;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin: 2px;
+  cursor: pointer;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+.color__cream:hover {
+  background-color: #000;
+}
+
 .car-grid {
   color: #343434;
   margin-top: 70px;
@@ -3680,8 +3768,6 @@ h6 {
   height: 100%;
   width: 90%;
   margin: 0 auto;
-  -webkit-transition-duration: .8s;
-          transition-duration: .8s;
 }
 
 .car__front-toxic:hover {

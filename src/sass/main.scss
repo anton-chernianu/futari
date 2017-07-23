@@ -19,6 +19,13 @@ html {
   font-family: $opensans_reg;
 }
 
+body.home::after {
+  content:
+      url('../images/nissan-front2.jpg')
+      url('../images/nissan-cream-front2.jpg');
+  display: none;
+}
+
 @media only screen and (max-width: 900px) {
   html {
     font-size: 14px;
