@@ -21,9 +21,14 @@ html {
 
 body.home::after {
   content:
-      url('../images/nissan-front2.jpg')
-      url('../images/nissan-cream-front2.jpg')
-      url('../images/nissan-back4.jpg')
+		url('../images/car/front-t1.jpg')
+		url('../images/car/front-t2.jpg')
+		url('../images/car/front-c1.jpg')
+		url('../images/car/front-c2.jpg')
+		url('../images/car/back-t1.jpg')
+		url('../images/car/back-t2.jpg')
+		url('../images/car/back-c1.jpg')
+		url('../images/car/back-c2.jpg')
       ;
   display: none;
 }

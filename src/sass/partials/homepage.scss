@@ -115,46 +115,46 @@
 	}
 
   &__front-toxic {
-    background-image: url('../images/nissan-front.jpg');
+    background-image: url('../images/car/front-t1.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     transition: 0.8s;
     transition-timing-function: linear;
     // transition-delay: 1.5s;
 
     &:hover {
-      background-image: url('../images/nissan-front2.jpg');
+      background-image: url('../images/car/front-t2.jpg');
     }
   }
 
   &__back-toxic {
-    background-image: url('../images/nissan-back3.jpg');
+    background-image: url('../images/car/back-t1.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     transition: 0.8s;
     transition-timing-function: linear;
 
 
     &:hover {
-      background-image: url('../images/nissan-back4.jpg');
+      background-image: url('../images/car/back-t2.jpg');
     }
   }
 
     &__front-cream {
-    background-image: url('../images/nissan-cream-front3.jpg');
+    background-image: url('../images/car/front-c1.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     transition: 0.8s;
     transition-timing-function: linear;
@@ -162,24 +162,25 @@
     display: none;
 
     &:hover {
-      background-image: url('../images/nissan-cream-front2.jpg');
+      background-image: url('../images/car/front-c2.jpg');
     }
   }
 
   &__back-cream {
-    background-image: url('../images/nissan-back3.jpg');
+    background-image: url('../images/car/back-c1.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     transition: 0.8s;
     transition-timing-function: linear;
-
+    display: none;
+    
 
     &:hover {
-      background-image: url('../images/nissan-back4.jpg');
+      background-image: url('../images/car/back-c2.jpg');
     }
   }
 

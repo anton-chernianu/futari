@@ -80,11 +80,15 @@ $( document ).ready(function() {
   $('.color__cream').on('click', function() {
     $('.car__front-toxic').addClass('car--hidden');
     $('.car__front-cream').addClass('car--visible');
+    $('.car__back-toxic').addClass('car--hidden');
+    $('.car__back-cream').addClass('car--visible');
   });
 
    $('.color__toxic').on('click', function() {
-        $('.car__front-toxic').removeClass('car--hidden');
+    $('.car__front-toxic').removeClass('car--hidden');
     $('.car__front-cream').removeClass('car--visible');
+    $('.car__back-toxic').removeClass('car--hidden');
+    $('.car__back-cream').removeClass('car--visible');
   });
 
      // $("#front-juke").hover(function(){           
