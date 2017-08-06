@@ -58,7 +58,7 @@ html {
 }
 
 body.home::after {
-  content: url("../images/nissan-front2.jpg") url("../images/nissan-cream-front2.jpg");
+  content: url("../images/car/front-t1.jpg") url("../images/car/front-t2.jpg") url("../images/car/front-c1.jpg") url("../images/car/front-c2.jpg") url("../images/car/back-t1.jpg") url("../images/car/back-t2.jpg") url("../images/car/back-c1.jpg") url("../images/car/back-c2.jpg");
   display: none;
 }
 
@@ -125,6 +125,14 @@ h6 {
 
 .svg-all:hover #logo-group path {
   fill: red !important;
+}
+
+.plus-icon {
+  width: 15px;
+  height: 15px;
+  fill: #333;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 /* font-family: "OpenSansRegular"; */
@@ -3629,7 +3637,19 @@ h6 {
   text-align: center;
 }
 
+.subtext {
+  font-family: "OpenSansLight";
+  color: #343434;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.subtext--center {
+  text-align: center;
+}
+
 .color {
+  margin-top: 10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3761,12 +3781,12 @@ h6 {
 }
 
 .car__front-toxic {
-  background-image: url("../images/nissan-front.jpg");
+  background-image: url("../images/car/front-t1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -3775,16 +3795,16 @@ h6 {
 }
 
 .car__front-toxic:hover {
-  background-image: url("../images/nissan-front2.jpg");
+  background-image: url("../images/car/front-t2.jpg");
 }
 
 .car__back-toxic {
-  background-image: url("../images/nissan-back3.jpg");
+  background-image: url("../images/car/back-t1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -3793,16 +3813,16 @@ h6 {
 }
 
 .car__back-toxic:hover {
-  background-image: url("../images/nissan-back4.jpg");
+  background-image: url("../images/car/back-t2.jpg");
 }
 
 .car__front-cream {
-  background-image: url("../images/nissan-cream-front3.jpg");
+  background-image: url("../images/car/front-c1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -3812,25 +3832,26 @@ h6 {
 }
 
 .car__front-cream:hover {
-  background-image: url("../images/nissan-cream-front2.jpg");
+  background-image: url("../images/car/front-c2.jpg");
 }
 
 .car__back-cream {
-  background-image: url("../images/nissan-back3.jpg");
+  background-image: url("../images/car/back-c1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   -webkit-transition: 0.8s;
   transition: 0.8s;
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;
+  display: none;
 }
 
 .car__back-cream:hover {
-  background-image: url("../images/nissan-back4.jpg");
+  background-image: url("../images/car/back-c2.jpg");
 }
 
 .car__info {
@@ -3843,7 +3864,7 @@ h6 {
 .car__title {
   font-family: "OpenSansLight";
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .car__title::after {
@@ -3908,6 +3929,12 @@ h6 {
   background-color: white;
 }
 
+.plus:hover .plus-icon {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .plus--close {
   position: absolute;
   margin-left: -35px;
@@ -3944,6 +3971,12 @@ h6 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.plus--close:hover .plus-icon {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 #light-btn {
@@ -4027,6 +4060,11 @@ h6 {
   text-decoration: none;
   line-height: 40px;
   color: black;
+}
+
+.btn--send {
+  margin: 0 auto;
+  padding: 5px;
 }
 
 @-webkit-keyframes criss-cross-left {
@@ -4180,4 +4218,344 @@ h6 {
 
 .site-info__phone:hover {
   color: #f95860;
+}
+
+.contact__container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.contact__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 50px 0;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact__person {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 25px;
+}
+
+.contact__form {
+  width: 60%;
+}
+
+.contact__form input {
+  width: 100%;
+  display: block;
+  margin: 10px 0px;
+  padding: 20px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 1.2rem;
+  font-family: "OpenSansLight";
+}
+
+.contact__form input:focus {
+  background: #d5d3d3;
+  border: none;
+  outline: none;
+}
+
+.contact__form textarea {
+  width: 100%;
+  height: 300px;
+  display: block;
+  margin: 10px 0;
+  padding: 20px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 1.2rem;
+  font-family: "OpenSansLight";
+  resize: none;
+}
+
+.contact__form textarea:focus {
+  background: #d5d3d3;
+  border: none;
+  outline: none;
+}
+
+.contact__link {
+  width: 25%;
+  height: 200px;
+  margin-left: 25px;
+  margin-top: 20px;
+  font-family: "OpenSansLight";
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__link a {
+  text-decoration: none;
+  color: #333;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.contact__link a:hover {
+  color: #f95860;
+}
+
+.contact__link .location {
+  text-transform: uppercase;
+}
+
+.contact__map {
+  margin-bottom: 50px;
+}
+
+.icon-block {
+  width: 30%;
+}
+
+.icon-text {
+  width: 70%;
+}
+
+.phone-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.mail-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.location-icon {
+  width: 50px;
+  height: 50px;
+}
+
+#map {
+  margin-top: 30px;
+  width: 100%;
+  height: 500px;
+}
+
+.person {
+  border: 2px solid #f2f2f2;
+  padding: 10px;
+  margin: 10px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.person__photo {
+  width: 100%;
+}
+
+.person__name {
+  margin-top: 10px;
+  font-family: "OpenSansRegular";
+  font-size: 1.5rem;
+}
+
+.person__position {
+  font-family: "OpenSansLight";
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+
+.person__social {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 4px;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+.social-icon:hover {
+  background-color: #f95860;
+}
+
+.delivery__container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.delivery__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.delivery__block {
+  width: 33.333%;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.delivery__icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.delivery__icon:hover .icon-cart, .delivery__icon:hover .icon-money, .delivery__icon:hover .icon-track {
+  fill: #f95860;
+}
+
+.delivery__title {
+  font-family: "OpenSansBold";
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.delivery__title--center {
+  text-align: center;
+}
+
+.delivery__text {
+  font-family: "OpenSansLight";
+  line-height: 24px;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.delivery__text--center {
+  text-align: center;
+}
+
+.icon-cart {
+  width: 200px;
+  height: 200px;
+  fill: #333;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+.icon-money {
+  width: 225px;
+  height: 225px;
+  fill: #333;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+.icon-track {
+  width: 250px;
+  height: 250px;
+  fill: #333;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
 }
