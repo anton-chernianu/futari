@@ -10,9 +10,18 @@ section.contact
 					textarea(placeholder = "Message:")
 					a.btn.btn--futari.btn--send(href="#") Send
 			.contact__link
-				.icon-phone
-				a.phone(href="#") +7-963-814-9000
-				.icon-mail
-				a.email(href="#") admin@futari.pro
-				.icon-location
-				p.location russian federation, blagoveschensk, teatralnya str. 228
+				.icon-block
+					svg.phone-icon(viewBox="0 0 93.169 93.169")
+						use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#phone-icon")
+				.icon-text
+					a.phone(href="#") +7-963-814-9000
+				.icon-block
+					svg.mail-icon(viewBox="0 0 512.001 512.001")
+						use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#mail-icon")
+				.icon-text
+					a.email(href="#") admin@futari.pro
+				.icon-block
+					svg.location-icon(viewBox="0 0 97.713 97.713")
+						use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#location-icon")
+				.icon-text
+					p.location russian federation, blagoveschensk, teatralnya str. 228

@@ -9,8 +9,10 @@
 	&__block {
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: space-between;
+		// justify-content: space-between;
 		margin-top: 50px;
+		padding: 15px;
+		box-sizing: border-box;
 	}
 
 	&__form {
@@ -19,7 +21,7 @@
 		input {
 			width: 100%;
 			display: block;
-			margin: 10px;
+			margin: 10px 0px;
 			padding: 20px 15px;
 			box-sizing: border-box;
 			border: none;
@@ -39,7 +41,7 @@
 			width: 100%;
 			height: 300px;
 			display: block;
-			margin: 10px;
+			margin: 10px 0;
 			padding: 20px 15px;
 			box-sizing: border-box;
 			border: none;
@@ -55,5 +57,58 @@
 			}
 		}
 	}
+
+
+	&__link {
+		width: 25%;
+		height: 200px;
+		margin-left: 25px;
+		margin-top: 20px;
+		font-family: $opensans_light;
+		font-size: 1.1rem;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+
+		a {
+			text-decoration: none;
+			color: #333;
+			transition-duration: .5s;
+
+			&:hover {
+				color: $red_color;
+			}
+		}
+
+		.location {
+			text-transform: uppercase;
+		}
+	}
+
+}
+
+.icon-block {
+	width: 30%;
+}
+
+.icon-text {
+	width: 70%;
+}
+
+
+.phone-icon {
+	width: 50px;
+	height: 50px;
+}
+
+.mail-icon{ 
+	width: 50px;
+	height: 50px;
+}
+
+.location-icon {
+	width: 50px;
+	height: 50px;
 }
 
