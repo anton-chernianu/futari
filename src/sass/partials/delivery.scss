@@ -6,6 +6,8 @@
 		// height: 70vh;
 		margin: 0 auto;
 		margin-top: 50px;
+		padding: 20px;
+		box-sizing: border-box;
 	}
 
 	&__info {
@@ -57,6 +59,7 @@
 		font-family: $opensans_light;
 		line-height: 24px;
 		font-size: 1.1rem;
+		text-align: justify;
 
 		&--center {
 			text-align: center;
