@@ -4237,10 +4237,30 @@ h6 {
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  margin-top: 50px;
+  margin: 50px 0;
   padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.contact__person {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 25px;
 }
 
 .contact__form {
@@ -4328,6 +4348,10 @@ h6 {
   text-transform: uppercase;
 }
 
+.contact__map {
+  margin-bottom: 50px;
+}
+
 .icon-block {
   width: 30%;
 }
@@ -4349,4 +4373,80 @@ h6 {
 .location-icon {
   width: 50px;
   height: 50px;
+}
+
+#map {
+  margin-top: 30px;
+  width: 100%;
+  height: 500px;
+}
+
+.person {
+  border: 2px solid #f2f2f2;
+  padding: 10px;
+  margin: 0 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  height: 420px;
+}
+
+.person__photo {
+  width: 100%;
+}
+
+.person__name {
+  margin-top: 10px;
+  font-family: "OpenSansRegular";
+  font-size: 1.5rem;
+}
+
+.person__position {
+  font-family: "OpenSansLight";
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+
+.person__social {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 4px;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+.social-icon:hover {
+  background-color: #f95860;
 }

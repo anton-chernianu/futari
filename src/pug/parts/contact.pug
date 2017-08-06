@@ -25,3 +25,60 @@ section.contact
 						use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#location-icon")
 				.icon-text
 					p.location russian federation, blagoveschensk, teatralnya str. 228
+		p.title.title--center Location
+		p.subtext.subtext--center Google Maps
+		.contact__map
+			#map
+			script.
+				var map;
+				function initMap() {
+				map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 13,
+				scrollwheel:  false,
+				center: {lat: 50.257906, lng: 127.550119},
+				styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+				});
+				marker = new google.maps.Marker({
+					map: map,
+					draggable: false,
+					position: {lat: 50.257906, lng: 127.550119},
+					icon: "/images/map.svg"
+				});
+				}
+			script(async, defer, src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7eZ9l-ik94nSxlCMdIiD1MgnJ91Jtzl4&callback=initMap")
+		p.title.title--center Contact Us
+		p.subtext.subtext--center Meet Some of Our Team
+		.contact__person
+			.person
+				img.person__photo(src="images/jason.png", alt="Jason Statham")
+				p.person__name Jason Statham
+				p.person__position CEO
+				.person__social
+					a.social-icon(href="#")
+						i.fa.fa-facebook
+					a.social-icon(href="#")
+						i.fa.fa-twitter
+					a.social-icon(href="#")
+						i.fa.fa-youtube
+			.person
+				img.person__photo(src="images/jason.png", alt="Jason Statham")
+				p.person__name Jason Statham
+				p.person__position CEO
+				.person__social
+					a.social-icon(href="#")
+						i.fa.fa-facebook
+					a.social-icon(href="#")
+						i.fa.fa-twitter
+					a.social-icon(href="#")
+						i.fa.fa-youtube
+			.person
+				img.person__photo(src="images/jason.png", alt="Jason Statham")
+				p.person__name Jason Statham
+				p.person__position CEO
+				.person__social
+					a.social-icon(href="#")
+						i.fa.fa-facebook
+					a.social-icon(href="#")
+						i.fa.fa-twitter
+					a.social-icon(href="#")
+						i.fa.fa-youtube
