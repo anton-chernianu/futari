@@ -134,10 +134,10 @@
 .person {
 	border: 2px solid #f2f2f2;
 	padding: 10px;
-	margin: 0 25px;
+	margin: 10px 25px;
 	box-sizing: border-box;
 	text-align: center;
-	height: 420px;
+	// height: 420px;
 
 	&__photo {
 		width: 100%;
@@ -181,3 +181,4 @@
 		background-color: $red_color;
 	}
 }
+

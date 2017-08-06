@@ -2,6 +2,16 @@
   #light-btn {
     display: none;
   }
+  .contact__block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .contact__link {
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -43,5 +53,36 @@
     -webkit-order: -1;
         -ms-flex-order: -1;
             order: -1;
+  }
+  .contact__block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin: 20px 0;
+  }
+  .contact__form {
+    width: 100%;
+  }
+  .contact__link {
+    margin: 0;
+    width: 100%;
+  }
+  #map {
+    height: 300px;
+  }
+  .person {
+    margin: 10px 5px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .contact__person {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
 }

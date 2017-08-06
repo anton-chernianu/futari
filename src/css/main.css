@@ -4384,11 +4384,10 @@ h6 {
 .person {
   border: 2px solid #f2f2f2;
   padding: 10px;
-  margin: 0 25px;
+  margin: 10px 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
-  height: 420px;
 }
 
 .person__photo {
@@ -4449,4 +4448,110 @@ h6 {
 
 .social-icon:hover {
   background-color: #f95860;
+}
+
+.delivery__container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.delivery__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.delivery__block {
+  width: 33.333%;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.delivery__icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.delivery__icon:hover .icon-cart, .delivery__icon:hover .icon-money, .delivery__icon:hover .icon-track {
+  fill: #f95860;
+}
+
+.delivery__title {
+  font-family: "OpenSansBold";
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.delivery__title--center {
+  text-align: center;
+}
+
+.delivery__text {
+  font-family: "OpenSansLight";
+  line-height: 24px;
+  font-size: 1.1rem;
+}
+
+.delivery__text--center {
+  text-align: center;
+}
+
+.icon-cart {
+  width: 200px;
+  height: 200px;
+  fill: #333;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+.icon-money {
+  width: 225px;
+  height: 225px;
+  fill: #333;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+.icon-track {
+  width: 250px;
+  height: 250px;
+  fill: #333;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
 }
