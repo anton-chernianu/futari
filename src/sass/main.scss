@@ -104,7 +104,19 @@ h6 {
 	}
 }
 
+.plus-icon {
+	width: 15px;
+	height: 15px;
+	fill: #333;
+	transition-duration: 1s;
+
+	&:hover {
+	}
+}
+
 @import "partials/fonts";
 @import "partials/animate";
 @import "partials/header";
 @import "partials/homepage.scss";
+@import "partials/contact.scss";
+@import "partials/delivery.scss";
