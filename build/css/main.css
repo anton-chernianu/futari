@@ -58,7 +58,7 @@ html {
 }
 
 body.home::after {
-  content: url("../images/nissan-front2.jpg") url("../images/nissan-cream-front2.jpg");
+  content: url("../images/car/front-t1.jpg") url("../images/car/front-t2.jpg") url("../images/car/front-c1.jpg") url("../images/car/front-c2.jpg") url("../images/car/back-t1.jpg") url("../images/car/back-t2.jpg") url("../images/car/back-c1.jpg") url("../images/car/back-c2.jpg");
   display: none;
 }
 
@@ -3630,6 +3630,7 @@ h6 {
 }
 
 .color {
+  margin-top: 10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3761,12 +3762,12 @@ h6 {
 }
 
 .car__front-toxic {
-  background-image: url("../images/nissan-front.jpg");
+  background-image: url("../images/car/front-t1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -3775,16 +3776,16 @@ h6 {
 }
 
 .car__front-toxic:hover {
-  background-image: url("../images/nissan-front2.jpg");
+  background-image: url("../images/car/front-t2.jpg");
 }
 
 .car__back-toxic {
-  background-image: url("../images/nissan-back3.jpg");
+  background-image: url("../images/car/back-t1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -3793,16 +3794,16 @@ h6 {
 }
 
 .car__back-toxic:hover {
-  background-image: url("../images/nissan-back4.jpg");
+  background-image: url("../images/car/back-t2.jpg");
 }
 
 .car__front-cream {
-  background-image: url("../images/nissan-cream-front3.jpg");
+  background-image: url("../images/car/front-c1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -3812,25 +3813,26 @@ h6 {
 }
 
 .car__front-cream:hover {
-  background-image: url("../images/nissan-cream-front2.jpg");
+  background-image: url("../images/car/front-c2.jpg");
 }
 
 .car__back-cream {
-  background-image: url("../images/nissan-back3.jpg");
+  background-image: url("../images/car/back-c1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   -webkit-transition: 0.8s;
   transition: 0.8s;
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;
+  display: none;
 }
 
 .car__back-cream:hover {
-  background-image: url("../images/nissan-back4.jpg");
+  background-image: url("../images/car/back-c2.jpg");
 }
 
 .car__info {
@@ -3843,7 +3845,7 @@ h6 {
 .car__title {
   font-family: "OpenSansLight";
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .car__title::after {
