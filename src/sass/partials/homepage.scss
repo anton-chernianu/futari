@@ -82,11 +82,13 @@
 
 .car-grid {
 	color: $text_black;
-	margin-top: 70px;
+	margin-top: 35px;
 
 	&__block {
 		display: flex;
 		flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 		margin-top: 25px;
     position: relative;
 	}

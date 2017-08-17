@@ -3734,7 +3734,7 @@ h6 {
 
 .car-grid {
   color: #343434;
-  margin-top: 70px;
+  margin-top: 35px;
 }
 
 .car-grid__block {
@@ -3747,6 +3747,14 @@ h6 {
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 25px;
   position: relative;
 }
